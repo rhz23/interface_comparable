@@ -17,7 +17,7 @@ public class Program {
 
         try(BufferedReader br = new BufferedReader(new FileReader(path))){
 
-            String employeeCsv = br.readLine();    //lê uma linha do arquivo e se o arquivo estiver no final, retorna nulo
+            String employeeCsv = br.readLine();    // lê uma linha do arquivo e se o arquivo estiver no final, retorna nulo
 
             while (employeeCsv != null){
                 String[] fields = employeeCsv.split(",");
