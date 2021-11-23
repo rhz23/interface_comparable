@@ -22,8 +22,13 @@ public class Employee implements Comparable<Employee>{
         return salary;
     }
 
-    public void setSalary(Double salary) {
-        this.salary = salary;
+    //Não é permitido configurar o salário do funcionário pelo método set
+    //public void setSalary(Double salary) {
+    //    this.salary = salary;
+    //}
+
+    public void aumentarSalario(Double percent){
+        this.salary += this.salary * percent / 100;
     }
 
     @Override
